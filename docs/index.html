@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Stock Synthesis - Data Limited Tool</title>
+    <title></title>
    <link type="text/css" rel="stylesheet" href="./static/simple.css" />
 
+
+</style>
 </head>
 <body>
     <div class="container">
         <div class="mywrap">
-            <h1 class ="title">Stock Synthesis - Data Limited Tool
-            </h1>
-              
-              <div class = "badge"  data-md-tooltip="Legacy Tool - Adopted"  id = badge_internal_inactive> </div>
-              
-              
-              <div class = "badge" data-md-tooltip=external_active id = external_active>
+            <div class ="title">
+              Management Strategy Evaluation for SS
+            </div>
+
+              <div class = "badge"  data-md-tooltip=badge_external_active id = badge_external_active> </div>
+
+
+
+              <div class = "badge" data-md-tooltip="Support Level" id = external_active >
               <!-- &#10039; -->
               </div>
-              
+
 
         </div>
         <div class="mywrap">
-              
-                <button class = "codelink nolink" title="Online application unavailable">
+
+                <button class = "codelink" id = "nolink">
                 Online Application
                 </button>
-              
 
-              
-              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/shcaba/SS-DL-tool', '_blank'); return false;">
+
+
+                <button class = "codelink" id = "nolink">
                 Download Application
                 </button>
-              
 
-              
-               <button class = "codelink nolink" title="No documentation available">
+
+
+                <button class = "codelink" title="link to documentation" onclick=" window.open('./manual/', '_blank'); return false;">
                 Documentation
                 </button>
-              
+                 <!-- <a href= "./_book/index.html" target="_blank" title="link to documentation">
+                <button class = "codelink">
+                Documentation
+                </button>
+              </a>
+ -->
 
-              
-                <button class = "codelink" title="link to code repository" onclick=" window.open('https://github.com/shcaba/SS-DL-tool', '_blank'); return false;">
+
+              <a href= "https://github.com/nmfs-fish-tools/SSMSE" target="_blank" title="link to code repository">
+                <button class = "codelink">
                 Code Repository
                 </button>
-              
+              </a>
+
               <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
               </button>
 
@@ -55,52 +66,64 @@
       <div class ="main">
         <div class="mywrap">
               <div class ="label">
-                Stock Synthesis Data-Limited Tool (SS-DL tool)
+                Management Strategy Evaluation for SS (SSMSE)
 
               </div>
 
 
-              
 
 
-              
-              
-              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/SS-DL?color=%230093D0&include_prereleases&label=%20>
-              
+              <!-- <a class = "githubIcon" href="https://github.com/nmfs-fish-tools/SSMSE" target="_blank"></a> -->
 
-
+              <button class = "versionButton">
+              Version
+              </button>
         </div>
 
         <div class ="label">
-            
-             Type: Stock Assessment Model
-            
+
+             Type: associated tool
+
         </div>
 
         <div class = "authName">
-         Author: Cope
+         Author: Doering, K., and N. Vaughan
 
         </div >
 
         <div class ="mainText">
-     The SS-DL tool uses Stock Synthesis to implement several common data-limited assessment methods all in one modelling framework. Under a unified modelling framework, additional data can be added as it becomes available. The tool builds Stock Synthesis files for provided data and life history information. It produces plots and tables for each model run via the r4ss package, as well as additional screen output for easy interpretation and provide a variety of additional applications to diagnose and explore model behavior. </div>
+          SSMSE is an R package for performing Management Strategy Evaluation (MSE) using Stock Synthesis (SS).  SS is used as the Operating Model (OM) and, if the user desires, the Estimation model (EM). SSMSE allows existing SS models to be used as the basis for an OM. These OMs are used in the MSE framework provided by SSMSE to evaluate the implications of management actions on a population given uncertainty.
+        </div>
 
         <div class="mainText">
-        
 
 
-          
 
-            
+
+          <div class = "ref">
+            Associated Tools
+          </div>
+            <ul id = "assocaited_tools">
+
+                <li><a href="https://vlab.noaa.gov/web/stock-synthesis"><i>SS</i></a></li>
+
+                <li><a href="https://nmfs-fish-tools.github.io/DST"><i>DST</i></a></li>
+
+            </ul>
+
+
+
               <div class = "ref">
             Code Repository Badges
           </div>
-             
 
-              
-              <img src="https://www.repostatus.org/badges/latest/active.svg">
-              
-              
+
+
+              <img src="https://www.repostatus.org/badges/latest/wip.svg">
+
+              <img src="https://img.shields.io/github/watchers/nmfs-fish-tools/ssmse.svg?style=social">
+
+
 
           </div>
       </div>
@@ -108,10 +131,10 @@
       <div class = "divider"></div>
 
         <footer >
-             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75px">
          <div class="mywrap_center">
-          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
-         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+          <a class ="mylink" id = "line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink" id = "line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
          <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
          </div>
 
@@ -123,3 +146,4 @@
 
 </body>
 </html>
+
